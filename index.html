@@ -14,25 +14,77 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="$FLUTTER_BASE_HREF">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta content="Tixon: Empowering students to explore, engage, and discover college events and more with never-ending discoverance." name="description">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="tixon">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="tixon" name="apple-mobile-web-app-title">
+<!--  <link href="icons/Icon-192.png" rel="apple-touch-icon">-->
   <script src="screens.js"></script>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+<!--  &lt;!&ndash; Favicon &ndash;&gt;-->
+<!--  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">-->
+<!--  <link href="image/x-icon" rel="icon" type="favicon.ico"/>-->
 
-  <title>tixon</title>
-  <link rel="manifest" href="manifest.json">
+  <meta content="Tixon - Discover College Events and More" property="og:title">
+  <meta content="Empowering students to explore and engage with college events. Discover new opportunities and more." property="og:description">
+  <meta content="/main-icon.png" property="og:image">
+  <meta content="https://tixon.app" property="og:url">
+
+  <meta content="/main-icon.png" name="twitter:card">
+  <meta content="Tixon - Discover College Events and More" name="twitter:title">
+  <meta content="Empowering students to explore and engage with college events. Discover new opportunities and more." name="twitter:description">
+  <meta content="/main-icon.png" name="twitter:image">
+
+
+  <meta content="GuJbfIAZiO83r8ezlLDBOt0ZOYmDuOgnHDglpNS10m8" name="google-site-verification" />
+  <link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+  <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+  <link href="/favicon.ico" rel="shortcut icon" />
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="/site.webmanifest" rel="manifest" />
+  <title>NEVER ENDING DISCOVERANCE </title>
+  <link href="manifest.json" rel="manifest">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+<style>
+  body{
+    height: 100vh;
+    margin: 0;
+  }
+  .flex-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    img{
+      height: 500px;
+      width: 500px;
+    }
+    /* Centers vertically */ /* Set a height for vertical centering */
+  }
+</style>
+<div class="flex-container">
+  <img alt="NEVER ENDING DISCOVERANCE" src="main-icon.png"/>
+</div>
+  <script async src="flutter_bootstrap.js"></script>
+<script>
+  function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+
+  window.addEventListener('load', function (ev) {
+    var loaderContent = document.querySelector('#loader-content');
+    engineInitializer.initializeEngine().then(async function (appRunner) {
+      loaderContent.style.opacity = "0";
+      await delay(400);
+      await appRunner.runApp();
+    });
+  });
+</script>
 </body>
 </html>
