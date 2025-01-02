@@ -1,11 +1,11 @@
 {
-    "name": "tixon",
-    "short_name": "tixon",
+    "name": "NEVER ENDING DISCOVERANCE",
+    "short_name": "NEVER ENDING DISCOVERANCE",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "NEVER ENDING DISCOVERANCE",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
